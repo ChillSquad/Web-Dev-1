@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    background: #000;
+    display: flex;
+    color: #fff;
+}
+
+.header_logo {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 56px;
+    margin-left: 12%;
+}
+
+nav {
+    margin-top: 56px;
+    margin-left: 40%;
+}
+
+.topNav a {
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.topNav a:hover {
+    border-bottom: 3px solid #fcac45;
+}
+
+.topNav .icon {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .main_welcome {
+    padding: 200px 0 410px 0;
+    background: #000;
+    text-align: center;
+    /* color: #fff; */
+}
+
+main .main_welcome p {
+    font-size: 20px;
+    color: #999999;
+}
+
+main .main_welcome .whiteSpan {
+    color: #fff;
+}
+
+main .main_welcome h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+main .main_welcome .mycompany {
+    color: #fcac45;
+}
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+    /* Выравнивает по середине */
+}
+
+main .main_about {
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+
+.about_right {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.about_left {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.about_right h1 {
+    text-transform: uppercase;
+    /* Чтобы черта была только под текстом */
+    display: inline-block;
+    border-bottom: 3px solid #fcac45;
+    padding-bottom: 20px;
+}
+
+.about_right p {
+    margin: 30px 0 50px 0;
+    color: #6c6c6c;
+    max-width: 388.55px;
+}
+
+.about_right ul {
+    max-width: 393.33px;
+}
+
+.about_right li {
+    background: url(mark.png) 0px no-repeat;
+    padding-left: 24px;
+    margin-bottom: 10px;
+}
+
+.about_right .lightSpan {
+    font-weight: normal;
+}
+
+.about_right .greySpan {
+    color: #6c6c6c;
+}
+
+/* main_team  */
+.main_team {
+    background: #000;
+    text-align: center;
+    padding: 100px 0 160px 0;
+    color: #fff;
+}
+
+.main_team h1 {
+    text-transform: uppercase;
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background: #fcac45;
+    margin-bottom: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.team_cards {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+}
+
+/* .team_cards .card {
+    max-width: 257px;
+    min-width: 160px;
+    margin: 0 auto 0 auto;
+} */
+
+.card .photo {
+    margin-bottom: 20px;
+}
+
+.card .position {
+    margin-top: 3px;
+    margin-bottom: 25px;
+    color: #b1aeae;
+}
+
+.card .about_position {
+    color: #b1aeae;
+}
+
+/* main_services */
+.main_services {
+    background: #fff;
+    text-align: center;
+    padding: 100px 0 160px 0;
+    color: #000;
+}
+
+.main_services h1 {
+    text-transform: uppercase;
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+
+.services_cards {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+}
+
+.card .photo {
+    margin-bottom: 20px;
+}
+
+.services_cards .about_position {
+    color: #000;
+}
+
+.main_services .line {
+    margin-bottom: 50px;
+}
+
+.servicesP {
+    margin-bottom: 75px;
+}
+
+.services_cards .card h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.services_cards .card .about_position {
+    color: #6c6c6c;
+}
+
+.servicesP {
+    color: #6c6c6c;
+}
+
+@media screen and (max-width: 1650px) {
+    nav {
+        margin-left: 29%;
+    }
+}
+
+@media screen and (max-width: 1445px) {
+    .about_right h1 {
+        text-align: center;
+    }
+
+    .about_right p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    nav {
+        margin-left: 19%;
+    }
+
+    /* .topNav a {
+        font-size: 13.6px;
+    } */
+}
+
+@media screen and (max-width: 1325px) {
+    .about_right {
+        margin-left: 25px;
+    }
+
+    .about_right h1 {
+        text-align: center;
+    }
+
+    .about_right p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    nav {
+        margin-left: 9%;
+    }
+
+    .main_about {
+        /* Расположение объектов в колонку */
+        flex-direction: column;
+    }
+
+    .about_right {
+        margin: 20px auto 0 auto;
+        /* margin-left: auto;
+        margin-right: auto; */
+        display: block;
+        text-align: center;
+    }
+
+    .about_right h1 {
+        font-size: 25px;
+    }
+
+    .about_right ul {
+        text-align: left;
+    }
+
+    .about_left img {
+        /* Располагает объект по середине блока */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .topNav a {
+        display: none;
+    }
+
+    .topNav a.icon {
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .topNav.responsive {
+        /* Cдвигает элемент относительно его обычного положения. */
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+
+    header .topNav.responsive {
+        height: 340px;
+    }
+
+    .topNav.responsive a.icon {
+        /* Координаты для нового местоположения отсчитываются от ближайшего позиционированного родителя */
+        position: absolute;
+        top: -50px;
+        right: -200px;
+    }
+
+    .topNav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+
+
+
+    main .main_welcome {
+        padding: 50px 0 50px 0;
+    }
+
+    main .main_welcome p {
+        font-size: 14px;
+    }
+
+    main .main_welcome h1 {
+        font-size: 25px;
+    }
+
+    .mw-100 {
+        /* Растягивает изображение по размеру блока */
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .team_cards {
+        grid-template-columns: auto;
+    }
+
+    .team_cards .card {
+        margin-bottom: 20px;
+    }
+
+    .services_cards {
+        grid-template-columns: auto;
+    }
+
+    .services_cards .card {
+        margin-bottom: 20px;
+    }
+}
