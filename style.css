@@ -88,8 +88,8 @@ main .main_welcome .mycompany {
 
 .wrapper {
     width: 75%;
-    margin: 0 auto;
     /* Выравнивает по середине */
+    margin: 0 auto;
 }
 
 main .main_about {
@@ -128,7 +128,7 @@ main .main_about {
 }
 
 .about_right li {
-    background: url(mark.png) 0px no-repeat;
+    background: url(img/mark.png) 0px no-repeat;
     padding-left: 24px;
     margin-bottom: 10px;
 }
@@ -243,9 +243,270 @@ main .main_about {
     color: #6c6c6c;
 }
 
+/* main_clients */
+.main_clients {
+    background: #000;
+    text-align: center;
+    padding: 100px 0 160px 0;
+    color: #fff;
+}
+
+.main_clients h1 {
+    text-transform: uppercase;
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+
+.main_clients .lightSpan {
+    font-weight: 100;
+}
+
+.clients_cards img {
+    margin-left: 30px;
+}
+
+.clients_cards img:first-child {
+    margin-left: 0;
+}
+
+/* main_testimonials */
+.main_testimonials {
+    background: #000;
+    text-align: center;
+    padding: 100px 0 160px 0;
+    color: #fff;
+}
+
+.main_testimonials h1 {
+    text-transform: uppercase;
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+
+.main_testimonials .lightSpan {
+    font-weight: 400;
+    color: #999999;
+}
+
+.text_testimonials {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+/* main_work */
+.main_work {
+    background: #fff;
+    text-align: center;
+    padding: 100px 0 160px 0;
+    color: #000;
+}
+
+.main_work h1 {
+    text-transform: uppercase;
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+
+.main_work p {
+    color: #6c6c6c;
+}
+
+.main_work .lightSpan {
+    font-weight: 400;
+    color: #6c6c6c;
+}
+
+.main_work p {
+    margin-bottom: 160px
+}
+
+.main_work img {
+    margin: 10px 10px 0 0;
+}
+
+.work_cards1 img {
+    margin: 0px 10px 0 0;
+}
+
+.main_work img:hover {
+    opacity: 0.9;
+}
+
+/* main_contact */
+.main_contact {
+    background: #fff;
+    text-align: center;
+    padding: 100px 0 160px 0;
+    color: #000;
+}
+
+.main_contact h1 {
+    text-transform: uppercase;
+    font-size: 44px;
+    padding-bottom: 30px;
+    color: #000;
+}
+
+.text_contact {
+    color: #6c6c6c;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.contact_wrapper {
+    max-width: 750px;
+    color: #636363;
+    margin: 0 auto;
+}
+
+.red {
+    color: red;
+}
+
+.form_inputs {
+    display: flex;
+}
+
+input {
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 0 5px;
+}
+
+input:first-of-type {
+    margin-right: 23px;
+}
+
+form {
+    text-align: left;
+}
+
+textarea {
+    width: 98%;
+    height: 160px;
+    resize: none;
+    padding: 5px;
+}
+
+input,
+textarea {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.button_block {
+    /* Перемещает элемент вправо */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+input[type=submit] {
+    width: 165px;
+    height: 40px;
+    background: #fcac45;
+    color: #fff;
+    margin-right: 0;
+}
+
+/* footer */
+footer {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background: #000;
+}
+
+footer a {
+    margin: auto 0 auto 12px;
+}
+
+footer a:first-child {
+    margin-left: 0px;
+}
+
+footer a img:hover {
+    opacity: 0.8;
+}
+
+/* go-top */
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(img/arrow.svg);
+    background-size: cover;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.go-top--show {
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.go-top:hover {
+    opacity: 1;
+}
+
+.go-top:active {
+    width: 45px;
+    height: 45px;
+}
+
+/* media */
 @media screen and (max-width: 1650px) {
     nav {
         margin-left: 29%;
+    }
+
+    .clients_cards img {
+        margin-top: 20px;
+    }
+
+    /*  */
+    .button_block {
+        display: block;
+    }
+
+    .form_inputs input {
+        display: block;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .form_inputs {
+        display: block;
+    }
+
+    textarea {
+        max-width: 100%;
+        height: 160px;
+        resize: none;
+    }
+
+}
+
+@media screen and (max-width: 1490px) {
+    .work_cards1 img:first-child {
+        display: none;
+    }
+
+    .work_cards2 img:first-child {
+        display: none;
+    }
+
+    .work_cards3 img:first-child {
+        display: none;
     }
 }
 
@@ -317,6 +578,20 @@ main .main_about {
     }
 }
 
+@media screen and (max-width: 1120px) {
+    .work_cards1 img:last-child {
+        display: none;
+    }
+
+    .work_cards2 img:last-child {
+        display: none;
+    }
+
+    .work_cards3 img:last-child {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1010px) {
     .topNav a {
         display: none;
@@ -377,6 +652,10 @@ main .main_about {
         /* Растягивает изображение по размеру блока */
         max-width: 100%;
     }
+
+    .go-top {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -395,5 +674,64 @@ main .main_about {
 
     .services_cards .card {
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .work_cards1 img:first-child {
+        display: block;
+    }
+
+    .work_cards2 img:first-child {
+        display: block;
+    }
+
+    .work_cards3 img:first-child {
+        display: block;
+    }
+
+    .work_cards1 img:not(:first-child) {
+        display: none;
+    }
+
+    .work_cards2 img:not(:first-child) {
+        display: none;
+    }
+
+    .work_cards3 img:not(:first-child) {
+        display: none;
+    }
+
+    .work_cards1 img {
+        margin: 10px auto 0 auto;
+    }
+
+    .work_cards2 img {
+        margin: 10px auto 0 auto;
+    }
+
+    .work_cards3 img {
+        margin: 10px auto 0 auto;
+    }
+
+    textarea {
+        width: 352px;
+        height: 160px;
+        resize: none;
+    }
+
+    form {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    textarea {
+        width: 340px;
+        height: 160px;
+    }
+
+    form {
+        margin-left: 5px;
     }
 }
